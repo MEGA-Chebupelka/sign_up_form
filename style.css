@@ -1,0 +1,189 @@
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  /* 2. Remove default margin */
+  * {
+    margin: 0;
+  }
+  
+  body {
+    /* 3. Add accessible line-height */
+    line-height: 1.5;
+    /* 4. Improve text rendering */
+    -webkit-font-smoothing: antialiased;
+
+    display: flex;
+  }
+  
+  body {
+    font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  }
+  
+  /* 5. Improve media defaults */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  
+  /* 6. Inherit fonts for form controls */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  
+  /* 7. Avoid text overflows */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  
+  p {
+    text-wrap: pretty;
+    color:#2D2D47;
+    font-weight: 1000;
+    font-family: 'Times New Roman'
+  }
+  h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+  }
+  a{
+    text-decoration: none;
+    color: #EEEEEE;
+  }
+  a:hover{
+    color: #aeaeae;
+  }
+  a:active{
+    color: #2D2D47;
+  }
+  #logIn{
+    color: #2D2D47;
+    text-decoration: underline;
+    font-family: 'Times New Roman'
+  }
+  #logIn:hover{
+    color: #665d81;
+    text-decoration: underline;
+  }
+  #logIn:active{
+    color: #323232;
+  }
+
+  #root, #__next {
+    isolation: isolate;
+  }
+
+.image{
+    height: 100vh;
+    display: flex;
+    position: relative;
+}
+
+/* Делаем изображение адаптивным и сохраняем пропорции */
+.image img {
+    max-height: 100%;
+    max-width: 100%;
+    z-index: -1;
+    object-fit: contain;
+}
+
+.underline{
+    text-decoration:underline;
+    text-decoration-color:#ACACAC;
+}
+
+.imgAuthor{
+    color: #EEEEEE;
+    padding: 5px;
+    position: absolute;
+    bottom: 0;
+    font-family: Notable;
+}
+.signForm{
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  background-image: linear-gradient(
+    #FFFFFF 50px,
+    #f2f2f2 0
+  );
+  background-size: 100% 100px;
+  background-repeat: repeat-y;
+
+}
+.head{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.title{
+  display: flex;
+  font-family: Notable;
+  color:#2D2D47;
+  font-size: 5em;
+  border-bottom: #2D2D47 solid;
+
+}
+.tagline{
+  font-family: Notable;
+  color:#2D2D47;
+}
+fieldset{
+  display: flex;
+  height: auto;
+  padding: 50px;
+  margin-top: 50px;
+  gap: 150px;
+  border: none;
+  background-color: #E4E4E4;
+  border-radius: 5px;
+  flex-grow: 1;
+
+}
+.inputElement{
+  width: 300px;
+  border-radius: 5px;
+}
+.inputElement:invalid{
+  border-color: rgb(255, 0, 0);
+}
+.inputElement:valid{
+  border-color: rgb(137, 201, 137);
+}
+label{
+  font-family: Notable;
+  color:#2D2D47;
+}
+.sign{
+  display: flex;
+  justify-content: center;
+}
+.field{
+  display: block;
+}
+.firstBlock, .secondBlock{
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  gap: 20px;
+}
+.signUpForm{
+  flex-grow: 1;
+}
+button{
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #f2f2f2;
+  background-color: #2D2D47;
+  border-radius: 10px;
+  height: 50px;
+  width: 250px;
+  font-family: 'Times New Roman', Times, serif;
+}
+.btn{
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
